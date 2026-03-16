@@ -39,6 +39,7 @@
       }
       #mockup {
         margin-bottom: -80px;
+        width: 400px;
       }
       #footer1 {
       }
@@ -64,32 +65,94 @@
         justify-content: center;
       }
       .mp {
-        padding: 500px 0 200px 0;
+        padding: 100px 0 200px 0;
+      }
+      #food-delivery {
+        font-size: 112px;
+      }
+      #variety {
+        font-size: 64px;
+      }
+      #grow-image {
+        width: 400px;
+      }
+      .gap-10 {
+        gap: 6rem;
+      }
+      #grow-text {
+        font-size: 64px;
+      }
+      #experience-text {
+        font-size: 64px;
+        width: 350px;
+      }
+      .w-4 {
+        width: 25%;
+      }
+      @media only screen and (max-width: 600px) {
+        #food-delivery {
+          font-size: 48px;
+        }
+        #variety {
+          font-size: 28px;
+        }
+        #grow-image {
+          width: 100%;
+        }
+        #grow-text {
+          font-size: 28px;
+        }
+        #experience-text {
+          font-size: 38px;
+          width: 100%;
+          margin-top: 50px;
+        }
+        #mockup {
+          margin-bottom: -48px;
+          width: 200px;
+        }
+        .w-4 {
+          width: 100%;
+        }
       }
     </style>
   </head>
   <body>
     <nav
-      class="d-flex justify-content-between px-5 py-3 align-items-center border border-bottom 2px solid black"
+      class="d-flex justify-content-between px-lg-5 px-1 py-3 align-items-center border border-bottom 2px solid black"
     >
       <img src="Images/logo-long.svg" alt="" />
-      <a href="" class="link">Ibadan</a>
-      <a href="" class="link">Abuja</a>
-      <a href="" class="link">Lagos</a>
+
+      <a href="" class="link d-none d-lg-block">Ibadan</a>
+      <a href="" class="link d-none d-lg-block">Abuja</a>
+      <a href="" class="link d-none d-lg-block">Lagos</a>
       <div class="d-flex gap-5 align-items-center">
         <p class="h6">Sign In</p>
-        <p class="h6 bg-dark text-light px-4 rounded-pill py-2">Sign Up</p>
+        <p
+          class="h6 bg-dark text-light px-4 rounded-pill py-2 d-none d-lg-block"
+        >
+          Sign Up
+        </p>
       </div>
     </nav>
 
     <section id="hero-section">
-      <div id="logo-group1" class="d-flex p-5 gap-5 justify-content-center">
-        <h1 style="font-size: 112px" class="w-50 lh-2">
+      <div
+        id="logo-group1"
+        class="d-flex flex-column flex-md-row p-5 gap-5 align-items-center"
+      >
+        <h1 id="food-delivery" class="w-lg-50 lh-2 text-start">
           Your food <span style="color: green">delivered</span> within minutes.
         </h1>
-        <img class="w-35 p-3" src="Images/hero-side (1).svg" alt="" />
+        <img
+          class="p-lg-3 justify-content-center"
+          src="Images/hero-side (1).svg"
+          alt=""
+        />
       </div>
-      <div class="d-flex gap-2 justify-content-end me-5a">
+      <div
+        class="d-flex gap-2 justify-content-lg-end justify-content-center me-lg-5"
+      >
         <img
           src="Images/Google_Play_Store_badge_EN.svg.png"
           alt=""
@@ -103,9 +166,9 @@
           id="download-logos"
         />
       </div>
-      <div class="p-5 d-flex">
+      <div class="p-lg-5 p-3 d-flex flex-column flex-md-row row-gap-3">
         <div
-          class="p-3 w-25 rounded-pill bg-body-secondary border border-0 me-2 ms-5"
+          class="p-3 rounded-pill bg-body-secondary border border-0 me-lg-2 ms-lg-5"
         >
           <i class="fa-solid fa-location-dot"></i>
           <input
@@ -123,7 +186,7 @@
       </div>
     </section>
     <main class="container">
-      <section id="second-section" class="d-flex gap-5">
+      <section id="second-section" class="d-flex flex-column flex-md-row gap-5">
         <div id="try-the-app" class="w-100">
           <img src="Images/try-the-app.svg" class="w-100" alt="" />
           <h3 class="pt-3">Try The App</h3>
@@ -174,12 +237,12 @@
         </div>
       </section>
       <section id="third-section" class="">
-        <div class="d-flex pt-5">
-          <div id="big-text" class="pt-5">
-            <h2 style="font-size: 64px" class="w-75 fw-bold lh-1">
+        <div class="d-flex flex-column-reverse flex-md-row row-gap-5 pt-5">
+          <div id="big-text" class="pt-lg-5">
+            <h2 id="variety" class="w-100 fw-bold lh-1">
               A Variety of Stores to choose from
             </h2>
-            <p class="fs-5 w-75 pt-3">
+            <p class="fs-5 w-lg-75 w-100 pt-3 lh-3">
               Order food from the best restaurants, local favorites, and online
               vendors using the app or web.
             </p>
@@ -194,19 +257,25 @@
           <img src="Images/second-sales-1.png" alt="" class="rounded-5" />
         </div>
       </section>
-      <section id="Fourth-section" class="d-flex gap-4 pt-5 pb-5">
+      <section
+        id="Fourth-section"
+        class="d-flex flex-column flex-md-row row-gap-5 gap-10 pt-5 pb-5"
+      >
         <div>
-          <img src="Images/second-sales-2.png" alt="" />
+          <img
+            src="Images/second-sales-2.png"
+            alt=""
+            class="rounded-5"
+            id="grow-image"
+          />
         </div>
         <div id="right-container">
-          <h1 style="font-size: 64px" class="w-75 fw-bold lh-1">
-            Grow With Heyfood
-          </h1>
+          <h1 id="grow-text" class="w-75 fw-bold lh-1">Grow With Heyfood</h1>
           <p class="fs-5 pt-3">
             Expand your business and make money with features that make managing
             and processing orders easier.
           </p>
-          <div id="flex-container" class="d-flex pt-5 pb-5">
+          <div id="flex-container" class="d-flex flex-column flex-md-row pb-5">
             <div id="flex-container-1">
               <img src="Images/second-sales-sub-1.svg" alt="" />
               <h5>Order Management</h5>
@@ -235,12 +304,20 @@
         </div>
       </section>
       <section id="fifth-section">
-        <div class="d-flex p-5 rounded-5" style="background-color: green">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-lg-between rounded-5 p-2 p-lg-5 pb-5"
+          style="background-color: green"
+        >
           <div id="fifth-section-text">
-            <h1 style="font-size: 64px" class="w-50 text-light lh-1">
+            <h1
+              id="experience-text"
+              class="max-height fw-bold text-light lh-1 text-lg-start text-center"
+            >
               Experience the app today!
             </h1>
-            <div class="d-flex gap-2 justify-content-start pt-5">
+            <div
+              class="d-flex gap-2 justify-content-lg-start justify-content-center pt-5"
+            >
               <img
                 src="Images/Google_Play_Store_badge_EN.svg.png"
                 alt=""
@@ -255,25 +332,28 @@
               />
             </div>
           </div>
-          <div></div>
-          <img
-            src="Images/download-app-phone.png"
-            alt=""
-            style="width: 400px"
-            class="object-fit-scale"
-            id="mockup"
-          />
+          <div>
+            <img
+              src="Images/download-app-phone.png"
+              alt=""
+              class="object-fit-scale pt-4"
+              id="mockup"
+            />
+          </div>
         </div>
       </section>
     </main>
     <footer class="container pt-5">
-      <div id="footer1" class="d-flex justify-content-between">
-        <div class="w-25">
-          <div id="logo-div">
+      <div
+        id="footer1"
+        class="d-flex justify-content-between flex-column flex-md-row flex-column-reverse gap-5"
+      >
+        <div class="w-4">
+          <div>
             <img src="Images/logo-long.svg" alt="" />
             <p class="fs-4">Your food delivered within minutes.</p>
           </div>
-          <div class="d-flex gap-2 justify-content-start pt-5">
+          <div class="d-flex gap-2 justify-content-start pt-lg-5 pt-3">
             <img
               src="Images/Google_Play_Store_badge_EN.svg.png"
               alt=""
@@ -289,7 +369,10 @@
           </div>
         </div>
 
-        <div id="footer-flex" class="d-flex gap-3">
+        <div
+          id="footer-flex"
+          class="d-flex flex-column flex-md-row row-gap-5 gap-3"
+        >
           <div id="flex-1" class="d-flex flex-column">
             <h5 class="fw-bold">Get To Know Us</h5>
             <a href="" class="link">About Us</a>
@@ -311,11 +394,13 @@
       </div>
 
       <div id="icon-group-flex">
-        <div class="text-end pt-5">
+        <div class="text-lg-end text-center pt-5 pb-5">
           <img src="Images/download-qr.svg" alt="" />
         </div>
-        <div class="d-flex justify-content-between">
-          <div class="icon-group d-flex gap-2">
+        <div
+          class="d-flex justify-content-lg-between flex-column flex-md-row row-gap-5"
+        >
+          <div class="icon-group d-flex gap-2 justify-content-center">
             <i class="fa-brands fa-facebook-f" id="icon"></i>
             <i class="fa-brands fa-x-twitter" id="icon"></i>
             <i class="fa-brands fa-youtube" id="icon"></i>
@@ -323,13 +408,13 @@
             <i class="fa-brands fa-square-linkedin" id="icon"></i>
           </div>
 
-          <div>
+          <div class="d-flex justify-content-center gap-3">
             <a href="" class="link fw-bold">Terms of Service</a>
             <a href="" class="link fw-bold">Privacy Policy</a>
           </div>
         </div>
       </div>
-      <div class="pt-5 text-center mp">
+      <div class="text-lg-center text-start mp">
         <p>© 2026 Hey Technologies Limited. All rights reserved</p>
       </div>
     </footer>
